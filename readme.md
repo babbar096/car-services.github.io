@@ -14,10 +14,17 @@ Neeraj Babbar
 ## Web pages
 
 -- Home - Hanish Dilip Kaprani
+
 -- Login - Raghavender Chakilam
+
 -- Sign Up - Raghavender Chakilam
+
 -- Services - Deeksha Kademgari
+
 -- Offers - Deeksha Kademgari
+
 -- Contact Us - Hanish Dilip Kaprani
+
 -- About Us - Neeraj Babbar
+
 -- FAQ - Neeraj Babbar
