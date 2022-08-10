@@ -1,0 +1,433 @@
+/* We start with some styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* We change the font-size so that each rem=10px which makes it easier to calculate and adjust */
+html {
+  font-size: 62.5%;
+}
+
+
+.menu-x {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: right 0.7s;
+}
+
+/* change class will be toggled when we try to open the side bar */
+.change .menu-x {
+  right: 33rem;
+}
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+/* three lines will become two and form an X with transform */
+.change .line {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.change .line-1 {
+  transform: rotate(45deg) translate(0.3rem, 0.8rem);
+}
+
+.change .line-2 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .line-3 {
+  transform: rotate(-45deg) translate(0.3rem, -0.8rem);
+}
+
+.menu-x span {
+  position: absolute;
+  left: 5rem;
+  width: 10rem;
+  height: 4rem;
+  background-color: #e2b646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.change .menu-x:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-x span::before {
+  content: "";
+  position: absolute;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid #e2b646;
+  border-bottom: 1rem solid transparent;
+  border-top: 1rem solid transparent;
+  top: 50%;
+  left: -2rem;
+  transform: translateY(-50%);
+}
+/* side-bar css */
+.sidebar {
+  width: 40rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -40rem;
+  background-color: #fff;
+  transition: right 0.5s;
+  z-index: 100;
+}
+.change .sidebar {
+  right: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-link {
+  font-family: "Baloo Da 2", serif;
+  font-size: 4rem;
+  color: #555;
+  position: relative;
+}
+.menu-link::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #c29525;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-link:hover::before {
+  width: 100%;
+}
+.social-media {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media i {
+  font-size: 2.2rem;
+  margin: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #777;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-media i:hover {
+  background-color: #c29525;
+}
+
+/* css for the form */
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper {
+  width: 80%;
+  height: 65rem;
+  display: flex;
+  box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.5);
+}
+
+.contact-left{
+  width: 35%;
+  overflow: hidden;
+}
+
+.contact-left img{
+  width: 100%;
+  min-height: 100%;
+}
+
+.contact-right {
+  width: 65%;
+  background-color: #eee;
+  padding: 3rem 10rem 10rem 10rem;
+}
+
+.contact-heading {
+  font-family: "Baloo Da 2", serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #272727;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.contact-right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+.field {
+  width: 45rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.2rem dashed #636363;
+  margin: 3rem 0;
+  padding: 1rem 1rem 1rem 0;
+  font-family: "Muli", serif;
+  font-size: 1.6rem;
+  color: #4b4b4b;
+}
+
+.input-group input {
+  height: 4rem;
+}
+
+.input-group textarea {
+  max-height: 7rem;
+  max-width: 45rem;
+}
+/* lines becomes solid when clicked in input */
+.field:focus {
+  border-bottom-style: solid;
+}
+
+.input-group label {
+  position: absolute;
+  left: 0;
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.8rem;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  pointer-events: none;
+  transform: translateY(-3rem); 
+  transition: all 0.3s;
+}
+
+.input-label {
+  bottom: 3.2rem;
+}
+
+.message {
+  bottom: 6rem;
+}
+
+
+
+.submit-btn {
+  width: 45rem;
+  height: 5rem;
+  background-color: #c29525;
+  color: #fff;
+  border: none;
+  margin-top: 2rem;
+  font-family: "Muli", serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+/* css for footer */
+.footer {
+
+  width: 100%;
+
+  height: 15rem;
+
+  background-color: #17181b;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+.footer-content {
+
+  width: 60%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+.copyright {
+
+  font-family: "Baloo Da 2", serif;
+
+  font-size: 1.6rem;
+
+  color: #a7a7a7;
+
+}
+
+.social-list a {
+
+  margin: 0 2rem;
+
+}
+
+.social-list i {
+
+  font-size: 2rem;
+
+  color: #a7a7a7;
+
+}
+
+/* media querires for responsive website */
+  @media (max-width: 1500px) {
+    .contact-wrapper {
+      width: 80%;
+      height: 65rem;
+    }
+  
+    .footer-content {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 1400px) { 
+    .menu-link {
+      font-size: 2.9rem;
+    }
+
+  }
+  
+  @media (max-width: 1300px) {
+    .contact-wrapper {
+      width: 90%;
+      height: 55rem;
+    }
+  
+    .contact-heading {
+      margin-bottom: 2rem;
+    }
+  
+    .field {
+      margin: 2rem 0;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .contact-left {
+      width: 0;
+    }
+  
+    .contact-right {
+      width: 100%;
+    }
+  
+    .field {
+      width: 55rem;
+    }
+  
+    .input-group textarea {
+      max-width: 55rem;
+    }
+  
+    .submit-btn {
+      width: 55rem;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+  
+    .copyright {
+      order: 1;
+      margin-top: 3rem;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .field {
+      width: 35rem;
+    }
+  
+    .input-group textarea {
+      max-width: 35rem;
+    }
+  
+    .submit-btn {
+      width: 35rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    html {
+      font-size: 45%;
+    }
+  
+    .sidebar {
+      width: 100%;
+      right: -100%;
+    }
+  
+    .change .hamburger-menu {
+      right: 38rem;
+    }
+  
+    .footer {
+      height: 18rem;
+    }
+  }

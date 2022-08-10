@@ -1,0 +1,225 @@
+
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@200&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .tab__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        font-weight: bold;
+      }
+      .tab {
+        padding: 16px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .active__tab {
+        border-bottom: 3px solid #ffd24c;
+      }
+      * {
+        font-family: "IBM Plex Sans Devanagari", sans-serif;
+      }
+      .tab__body {
+        margin: 32px;
+      }
+      /** Tile Css **/
+      .tile__container {
+        border: 1px solid #c4c4c4;
+        padding: 1rem;
+        border-radius: 5px;
+      }
+      .tile__body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .tile__body ul {
+        columns: 2;
+        column-gap: 100px;
+        padding: 1rem;
+      }
+      .tile__body ul li::marker {
+        content: "\2713\0020	";
+        color: green;
+      }
+      .tile__body > img {
+        height: 180px;
+        width: 180px;
+      }
+      .tile__footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+      .tile__action {
+        padding: 1rem;
+        border: 1px solid #ffd24c;
+        border-radius: 5px;
+        color: #ffd24c;
+        cursor: pointer;
+      }
+      .tile__action:hover {
+        color: #fff;
+        background-color: #ffd24c;
+      }
+      /*header */
+      .header {
+        background-color: #383b3f;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        overflow: hidden;
+      }
+      .header a {
+        float: left;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 4px;
+        padding: 0 1rem;
+      }
+      .header a:hover {
+        color: FFD24C;
+      }
+      .header-right {
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+      header > img {
+        width: 200px;
+      }
+      #link {
+        float: right;
+      }
+      .header a.signin {
+        border: 1px solid white;
+        padding: 0.4rem 1rem;
+        margin: 5px;
+      }
+      .header a.signin:hover {
+        background-color: #ffd24c;
+        border: 1px solid transparent;
+        color: white;
+      }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 50px;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      form {
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        padding: 1.5rem;
+        border-radius: 5px;
+      }
+      /*footer*/
+      #footer {
+        background-color: #383b3f;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+      }
+      @media (min-height: 480px) {
+        header {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          z-index: 999;
+        }
+      }
+
+
+  /*footer*/   
+.footer {
+  width: 100%;
+  height: 15rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ .copyright {
+  font-family: "Baloo Da 2", serif;
+  font-size: 1.6rem;
+  color: #a7a7a7;
+ }
+
+ .social-list a {
+  margin: 0 2rem;
+ }
+ 
+ .social-list i {
+  font-size: 2rem;
+  color: #a7a7a7;
+ }
+
+
+@media (max-width: 1500px) {
+ .footer-content {
+  width: 80%;
+ }
+}
+@media (max-width: 1000px) {
+ .footer-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+ }
+
+ .copyright {
+  order: 1;
+  margin-top: 3rem;
+ }
+}
+@media (max-width: 500px) {
+ .footer {
+  height: 18rem;
+ }
+}
+

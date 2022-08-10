@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- This div tag is used to create the side menu for the webpages -->
+      <div class="side-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+
+      <!-- We are using nav tag to switch between the pages of the website -->
+      <nav class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="index1.html" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="AboutUs.html" class="menu-link" data-content="About Us"
+              >About Us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="services.html" class="menu-link" data-content="Services"
+              >Services</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="offers.html" class="menu-link" data-content="Offers"
+              >Offers</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="login.html" class="menu-link" data-content="Login"
+              >Login</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="signup.html" class="menu-link" data-content="Sign Up"
+              >Sign Up</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="faq.html" class="menu-link" data-content="FAQ">FAQ</a>
+          </li>
+          <li class="menu-item">
+            <a href="contactus.html" class="menu-link" data-content="Contact Us"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <!-- This div tag is used for creating the icons inside the side menu  -->
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </nav>
+      <!-- This section is for the about us page -->
+      <section class="about-us">
+        <div class="section-header">
+          <!-- This tag is used for the headings of each page -->
+          <h1 class="section-heading">About Us</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="services">
+          <!-- This div tag is used for creating the content of about us page. -->
+          <div class="service">
+            <!-- This div tag is used for creating the content of first paragraph of the page -->
+            <div class="service-header">
+              <i class="fas fa-solid fa-people-group"></i>
+              <h3>Our Team</h3>
+            </div>
+            <p class="service-text">
+              This website is a group project. It is made by group of 4 members:
+              Neeraj, Hanish, Deeksha, and Raghavan. With the help of this
+              website you will be able to get the best services for your car in
+              easy steps.
+            </p>
+          </div>
+          <div class="service">
+            <!-- This div tag is used for creating the content of second paragraph of the page -->
+            <div class="service-header">
+              <i class="fas fa-solid fa-car"></i>
+              <h3>
+                Mechanics aims to be the best of both worlds - Reliable and
+                Cost-effective Car Services
+              </h3>
+            </div>
+            <p class="service-text">
+              Mechanic is a network of technology-enabled car service centres,
+              offering a seamless car service experience at the convenience of a
+              tap. With our highly skilled technicians, manufacturer recommended
+              procedures and the promise of genuine spare parts we are your best
+              bet.
+            </p>
+          </div>
+          <div class="service">
+            <!-- This div tag is used for creating the content of third paragraph of the page -->
+            <div class="service-header">
+              <i class="fas fa-solid fa-screwdriver-wrench"></i>
+              <h3>Mechanics provides wide variety of car services</h3>
+            </div>
+            <p class="service-text">
+              With the help of expert technicians, we provide wide variety of
+              services to our customer. For more details click on the service
+              section on our page.
+            </p>
+          </div>
+          <div class="service">
+            <!-- This div tag is used for creating the content of form inside the about us -->
+            <div class="service-header">
+              <i class="fas fa-solid fa-book-open"></i>
+              <h3>Enter your email to get the brochure</h3>
+            </div>
+            <form
+              name="brochure"
+              action="#"
+              onsubmit="validateEmail(document.brochure.email)"
+            >
+              <!-- This is the form tag which is used inside the about us page -->
+              <label class="forlabel" for="email">Email:</label>
+              <input
+                class="forlabel"
+                type="text"
+                id="text1"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <input
+                type="submit"
+                class="forlabel"
+                value="Submit"
+                id="Submit"
+              />
+            </form>
+          </div>
+          <div class="about-us-img-wrapper">
+            <img src="images/about-us.jpg" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <!-- This is the footer tag -->
+      <div class="footer-content">
+        <p class="copyright">
+          Copyright &copy; 2022,CarServices - All Rights Reserved
+        </p>
+        <div class="social-list">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

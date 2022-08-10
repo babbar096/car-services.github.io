@@ -1,0 +1,425 @@
+<html>
+  <head>
+    <title>Services</title>
+
+    <!--linking css styling to html-->
+    <link rel="stylesheet" href="css/styleservice.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet"
+  />
+  <script src="js/services.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <!--Navigation to move to the other webpages-->
+    <nav>
+      <div class="header">
+        <h2>Car Services</h2>
+        <a href="" class="logo"></a>
+      
+        <div class="header-right">
+          <a href="contactus.html">Contact Us</a>
+          <a href="AboutUs.html">About Us</a>
+          <a href="index1.html">Home</a>
+          <a href="AboutUs.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="offers.html">Offers</a>
+          <a href="faq.html">FAQ</a>
+
+          <a class="signin" href="#Signin">Sign In</a>
+          <a class="signin" href="signup.html">Sign Up</a>
+          <i class="fas fa-shopping-cart" style="font-size: 25px; margin:10px"></i>
+      
+        </div>
+      </div>
+    </nav>
+    </header>
+
+<!-- Main class -->
+
+    <main>
+      <!-- Tabs  -->
+
+      <div style="flex: 2">
+        <div class="tab__container">
+          <div
+            class="tab active__tab"
+            onclick="tabSwitcher('Periodic_Services')"
+          >
+            Periodic Services
+          </div>
+          <div class="tab" onclick="tabSwitcher('wheel_care')">Wheel care</div>
+          <div class="tab" onclick="tabSwitcher('detailing')">Detailing</div>
+          <div class="tab" onclick="tabSwitcher('inspections')">
+            Inspections
+          </div>
+          <div class="tab" onclick="tabSwitcher('suspension')">
+            Suspension & Fitments
+          </div>
+        </div>
+
+      <div id="Periodic_Services" class="tab__body">
+        <h2 class="hmain">Scheduled Packages</h2>
+
+          
+            <div class="tile__container">
+              <div class="tile__body">
+                <img src="./images/first.jpg" />
+                <div>
+                  <h3>Basic Services</h3>
+                  <ul>
+                    <li>Wiper Fluid Replacement</li>
+                    <li>Car Wash</li>
+                    <li>Engine Oil Replacement</li>
+                    <li>Battery Water Top Up</li>
+                    <li>Interior Vaccuming</li>
+                  </ul>
+                </div>
+              </div> 
+
+            <div class="tile__footer">
+              <span><b>&#36; 350</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section> 
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/standard.jpg" />
+              <div>
+                <h3>Standard Services</h3>
+                <ul>
+                  <li>Car Scanning</li>
+                  <li>Battery Water Top up</li>
+                  <li>Interior Vaccuming</li>
+                  <li>Wiper Fluid Replacement</li>
+                  <li>Car Wash</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 589</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/comprehensive.jpg" />
+              <div>
+                <h3>Comprehensive Services</h3>
+                <ul>
+                  <li>Ac Filter Replacement</li>
+                  <li>Fuel Filter checking</li>
+                  <li>Wiper Fluid Replacement</li>
+                  <li>Battery Water top up</li>
+                  <li>Car Scanning</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 729</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+
+        <div id="wheel_care" class="tab__body" style="display: none">
+          <h2>MRF</h2>
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/mrf.jpg" />
+              <div>
+                <h3>MRF ZVTV</h3>
+                <ul>
+                  <li>Tubeless</li>
+                  <li>6 years warranty</li>
+                  <li>Tyre Replacement and service center</li>
+                  <li>Alignment & Balancing</li>
+                  <li>Tyres inspection</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 482</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+          
+          <h2>BridgeStone</h2>
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/bridgestone.jpeg" />
+              <div>
+                <h3>Bridgestone B290</h3>
+                <ul>
+                  <li>Tubeless</li>
+                  <li>5 years warranty</li>
+                  <li>Tyre Replacement and service center</li>
+                  <li>Alignment & Balancing</li>
+                  <li>Tyres inspection</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 589</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+
+          <h2>GoodYear</h2>
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/goodyear.jfif" />
+              <div>
+                <h3>GoodYear TripleMax</h3>
+                <ul>
+                  <li>Tubeless</li>
+                  <li>5 years warranty</li>
+                  <li>Tyre Replacement and service center</li>
+                  <li>Alignment & Balancing</li>
+                  <li>Tyres inspection</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 636</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+         </div>
+        </section>
+
+        <div id="detailing" class="tab__body" style="display: none">
+          <h2>Polishing</h2>
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/polishing.jpg" />
+              <div>
+                <h3>3M Car Rubbing and Polishing</h3>
+                <ul>
+                  <li>Pressure Washing</li>
+                  <li>3M Wax Polishing</li>
+                  <li>Tyre Dressing & Alloy Polishing</li>
+                  <li>Rubbing with 3M Compound</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 317</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+
+
+
+          <h2>Ceramic Coating</h2>
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/ceramic.jpg" />
+              <div>
+                <h3>3M Ceramic Coating</h3>
+                <ul>
+                  <li>Complete Painting Correction</li>
+                  <li>2 Layers of Coating</li>
+                  <li>Deep ALl Round Spa</li>
+                  <li>Exterior Car Wash</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 853</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/meguiar.jpg" />
+              <div>
+                <h3>Meguiar's Ceramic Coating</h3>
+                <ul>
+                  <li>Complete Painting Correction</li>
+                  <li>2 Layers of Coating</li>
+                  <li>Deep ALl Round Spa</li>
+                  <li>Exterior Car Wash</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 964</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+
+        <div id="inspections" class="tab__body" style="display: none">
+          <h2>Used Car</h2>
+
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/used.jpg" />
+              <div>
+                <h3>Second Hand Car Inspection</h3>
+                <ul>
+                  <li>Scanner Report Provided</li>
+                  <li>Physical Car Diagnosis</li>
+                  <li>Full Car Scanning</li>
+                  <li>Upfront Estimate</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 285</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+      
+
+          <h2>Inspections</h2>
+        
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/enginescanning.jpg" />
+              <div>
+                <h3>Engine Scanning</h3>
+                <ul>
+                  <li>Electrical Scanning</li>
+                  <li>Sensor Reset</li>
+                  <li>Error Code Deletion</li>
+                  <li>Inspection of Exaust Smoke</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 374</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </section>
+          
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/insurance.jpg" />
+              <div>
+                <h3>Insurance Claim Inspection</h3>
+                <ul>
+                  <li>Front Shocker Check</li>
+                  <li>Shocker Mount Check</li>
+                  <li>Jumping Rod Bush Check</li>
+                  <li>Link Rod Inspection</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 438</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </div>
+        <div id="suspension" class="tab__body" style="display: none">
+          <h2>Steering</h2>
+          <div class="tile__container">
+            <div class="tile__body">
+              <img src="./images/eps.jpg" />
+              <div>
+                <h3>EPS Module Repair</h3>
+                <ul>
+                  <li>Torque Sensor Additional if Needed</li>
+                  <li>Steering Rack, Steering Motor</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tile__footer">
+              <span><b>&#36; 586</b></span>
+              <div class="tile__action">+ Add to Cart</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="flex: 1">
+        <div class="sticky">
+        <!-- Qurey Form sticky -->
+        <form action="/">
+            <h3>Any Queries ?</h3>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Query</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input
+              type="submit"
+              style="background-color: #ffd24c; width: 100%"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
+<!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2020, CodeAndCreate - All Rights Reserved
+          </p>
+          <div class="social-list">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+     </footer>
+  </body>
+</html>
